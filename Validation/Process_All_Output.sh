@@ -47,7 +47,6 @@ PROCESS BRE_Spray
 PROCESS Bryant_Doorway
 PROCESS CAROLFIRE
 PROCESS Casara_Arts_Ribbed_Channel
-PROCESS CHRISTIFIRE
 PROCESS Crown_Fires
 PROCESS CSIRO_Grassland_Fires
 PROCESS CSTB_Tunnel
@@ -68,12 +67,14 @@ PROCESS Harrison_Spill_Plumes
 PROCESS Heated_Channel_Flow
 PROCESS Heskestad_Flame_Height
 PROCESS Insulation_Materials
+PROCESS JH_FDS
 PROCESS Juelich_SETCOM
 PROCESS LEMTA_Spray
 PROCESS LLNL_Enclosure
 PROCESS LNG_Dispersion
 PROCESS Loughborough_Jet_Fires
 PROCESS McCaffrey_Plume
+PROCESS Memorial_Tunnel
 PROCESS Montoir_LNG_Fires
 PROCESS Moody_Chart
 PROCESS MPI_Scaling_Tests
@@ -86,11 +87,13 @@ PROCESS NIST_FSE_2008
 PROCESS NIST_He_2009
 PROCESS NIST_NRC
 PROCESS NIST_NRC_Corner_Effects
+PROCESS NIST_NRC_OLIVE-Fire
 PROCESS NIST_NRC_Parallel_Panels
 PROCESS NIST_Pool_Fires
 PROCESS NIST_RSE_1994
 PROCESS NIST_RSE_2007
 PROCESS NIST_Smoke_Alarms
+PROCESS NIST_Structure_Separation
 PROCESS NIST_Vent_Study
 PROCESS NRCC_Facade
 PROCESS NRCC_Smoke_Tower

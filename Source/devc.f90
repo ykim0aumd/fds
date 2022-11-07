@@ -34,7 +34,7 @@ END TYPE PROPERTY_TYPE
 TYPE SUBDEVICE_TYPE
    !> !\{
    !> Intermediate value used for computing device SPATIAL_STATISTIC or TEMPORAL_STATISTIC
-   REAL(EB) :: VALUE_1=0._EB,VALUE_2=0._EB,VALUE_3=0._EB
+   REAL(EB) :: VALUE_1=0._EB,VALUE_2=0._EB,VALUE_3=0._EB,VALUE_4=0._EB
    !> !\}
    !> !\{
    !> Subdevice point, line, or bounding box physical coordinate (m)
@@ -72,13 +72,13 @@ TYPE DEVICE_TYPE
    REAL(EB) :: X1,X2,Y1,Y2,Z1,Z2
    !> !\}
    REAL(EB) :: INITIAL_VALUE=-1.E10_EB,INSTANT_VALUE,VALUE=0._EB,SMOOTHED_VALUE=-1.E10_EB,PREVIOUS_VALUE=0._EB, &
-               DEPTH,TMP_L,Y_C,OBSCURATION,DELAY,ROTATION,SMOOTHING_FACTOR=0._EB,VALUE_1,VALUE_2,VALUE_3,&
+               DEPTH,TMP_L,Y_C,OBSCURATION,DELAY,ROTATION,SMOOTHING_FACTOR=0._EB,VALUE_1,VALUE_2,VALUE_3,VALUE_4,&
                SETPOINT, T_CHANGE=1.E6_EB,BYPASS_FLOWRATE,DT,TOTAL_FLOWRATE,FLOWRATE, &
                CONVERSION_ADDEND=0._EB,CONVERSION_FACTOR=1._EB,COORD_FACTOR=1._EB, &
                TIME_INTERVAL=0._EB,QUANTITY_RANGE(2),STATISTICS_START=-1.E20_EB,STATISTICS_END=1.E20_EB,&
                OVEC(3),DFVEC(3),CELL_L=-1._EB,RMS_VALUE=0._EB,RMS_VALUE2=0._EB,&
                COV_VALUE=0._EB,AVERAGE_VALUE=0._EB,AVERAGE_VALUE2=0._EB,&
-               PDPA_NUMER=0._EB,PDPA_DENUM=0._EB,Z_INT,TMP_UP,TMP_LOW,TIME_PERIOD=-1._EB,DL
+               PDPA_NUMER=0._EB,PDPA_DENOM=0._EB,Z_INT,TMP_UP,TMP_LOW,TIME_PERIOD=-1._EB,DL
    REAL(EB), ALLOCATABLE, DIMENSION(:) :: TIME_ARRAY,TIME_MAX_VALUE,TIME_MIN_VALUE
    REAL(EB), ALLOCATABLE, DIMENSION(:,:) :: YY_SOOT
    REAL(EB), POINTER, DIMENSION(:) :: T_E,Y_E
@@ -142,7 +142,7 @@ IMPLICIT NONE (TYPE,EXTERNAL)
 ! 201-300 are functions with two inputs only
 ! 301-400 are functions with two or more inputs
 ! 401-500 are functions with only a single DEVC input
-INTEGER, PARAMETER :: TIME_DELAY=1,DEADBAND=2,CUSTOM=3,KILL=4,CORE_DUMP=5,&
+INTEGER, PARAMETER :: TIME_DELAY=1,CUSTOM=2,DEADBAND=3,KILL=4,CORE_DUMP=5,&
                       AND_GATE=51,OR_GATE=52,XOR_GATE=53,X_OF_N_GATE=54,&
                       CF_EXP=101,CF_LOG=102,CF_PID=103,CF_SIN=104,CF_COS=105,CF_TAN=106,CF_ASIN=107,CF_ACOS=108,CF_ATAN=109,&
                       CF_ABS=110,&
@@ -166,6 +166,7 @@ TYPE CONTROL_TYPE
    LOGICAL :: PRIOR_STATE=.FALSE.   !< Prior timestep logical state of the control function
    LOGICAL :: LATCH=.TRUE.          !< Control function can only change state once
    LOGICAL :: UPDATED=.FALSE.       !< Control function has been updatead in the current timestep
+   LOGICAL :: CONTROL_FORCE(3)=.FALSE. !< Indicates whether control value will be used as a direct force in the momentum equation
    INTEGER :: CONTROL_INDEX=0       !< Indicates the type of control function
    INTEGER :: N_INPUTS=0            !< Number of inputs to the control function
    INTEGER :: RAMP_INDEX=0          !< Index of a RAMP used for the CUSTOM control function

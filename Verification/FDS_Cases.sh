@@ -37,6 +37,7 @@ $QFDS -d Complex_Geometry geom_channel2.fds
 $QFDS -d Complex_Geometry geom_channel_tmp.fds
 $QFDS -d Complex_Geometry geom_channel_tmp2.fds
 $QFDS -d Complex_Geometry geom_extruded_poly.fds
+$QFDS -d Complex_Geometry geom_hrrpuv_init.fds
 $QFDS -d Complex_Geometry geom_intersection.fds
 $QFDS -d Complex_Geometry geom_bad_inverted_normals.fds
 $QFDS -p 4 -d Complex_Geometry geom_particle_cascade_2.fds
@@ -45,6 +46,7 @@ $QFDS -d Complex_Geometry geom_simple.fds
 #$QFDS -d Complex_Geometry geom_elev.fds
 #$QFDS -d Complex_Geometry geom_scale.fds
 $QFDS -d Complex_Geometry geom_obst.fds
+$QFDS -d Complex_Geometry geom_part_init.fds
 $QFDS -d Complex_Geometry geom_sphere1a.fds
 $QFDS -d Complex_Geometry geom_sphere1c.fds
 $QFDS -d Complex_Geometry geom_sphere1e.fds
@@ -85,19 +87,6 @@ $QFDS -d Complex_Geometry shunn3_128_cc_exp_gdv.fds
 $QFDS -d Complex_Geometry shunn3_256_cc_exp_gdv.fds
 $QFDS -d Complex_Geometry shunn3_384_cc_exp_gdv.fds
 
-$QFDS -d Complex_Geometry geom_poiseuille_N10a_theta0_ibm.fds
-$QFDS -d Complex_Geometry geom_poiseuille_N20a_theta0_ibm.fds
-$QFDS -d Complex_Geometry geom_poiseuille_N40a_theta0_ibm.fds
-$QFDS -d Complex_Geometry geom_poiseuille_N80a_theta0_ibm.fds
-$QFDS -d Complex_Geometry geom_poiseuille_N10na_theta0_ibm.fds
-$QFDS -d Complex_Geometry geom_poiseuille_N20na_theta0_ibm.fds
-$QFDS -d Complex_Geometry geom_poiseuille_N40na_theta0_ibm.fds
-$QFDS -d Complex_Geometry geom_poiseuille_N80na_theta0_ibm.fds
-$QFDS -d Complex_Geometry geom_poiseuille_N10nah_theta0_ibm.fds
-$QFDS -d Complex_Geometry geom_poiseuille_N20nah_theta0_ibm.fds
-$QFDS -d Complex_Geometry geom_poiseuille_N40nah_theta0_ibm.fds
-$QFDS -d Complex_Geometry geom_poiseuille_N80nah_theta0_ibm.fds
-
 $QFDS -d Complex_Geometry geom_poiseuille_N10a_theta0_stm.fds
 $QFDS -d Complex_Geometry geom_poiseuille_N20a_theta0_stm.fds
 $QFDS -d Complex_Geometry geom_poiseuille_N40a_theta0_stm.fds
@@ -117,40 +106,25 @@ $QFDS -d Complex_Geometry geom_bad_non_manifold_vert.fds
 $QFDS -d Complex_Geometry geom_bad_open_surface.fds
 $QFDS -d Complex_Geometry geom_self_intersection.fds
 
-$QFDS -d Complex_Geometry rotated_cube_0deg_32_ibm.fds
 $QFDS -d Complex_Geometry rotated_cube_0deg_32_stm.fds
 $QFDS -d Complex_Geometry rotated_cube_0deg_32_obs.fds
-$QFDS -d Complex_Geometry rotated_cube_0deg_64_ibm.fds
 $QFDS -d Complex_Geometry rotated_cube_0deg_64_stm.fds
 $QFDS -d Complex_Geometry rotated_cube_0deg_64_obs.fds
-$QFDS -d Complex_Geometry rotated_cube_0deg_128_ibm.fds
 $QFDS -d Complex_Geometry rotated_cube_0deg_128_stm.fds
 $QFDS -d Complex_Geometry rotated_cube_0deg_128_obs.fds
-$QFDS -d Complex_Geometry rotated_cube_0deg_256_ibm.fds
 $QFDS -d Complex_Geometry rotated_cube_0deg_256_stm.fds
 $QFDS -d Complex_Geometry rotated_cube_0deg_256_obs.fds
-$QFDS -o 2 -d Complex_Geometry rotated_cube_0deg_384_ibm.fds
 $QFDS -o 2 -d Complex_Geometry rotated_cube_0deg_384_stm.fds
 $QFDS -o 2 -d Complex_Geometry rotated_cube_0deg_384_obs.fds
-$QFDS -d Complex_Geometry rotated_cube_27deg_32_ibm.fds
 $QFDS -d Complex_Geometry rotated_cube_27deg_32_stm.fds
-$QFDS -d Complex_Geometry rotated_cube_27deg_64_ibm.fds
 $QFDS -d Complex_Geometry rotated_cube_27deg_64_stm.fds
-$QFDS -d Complex_Geometry rotated_cube_27deg_128_ibm.fds
 $QFDS -d Complex_Geometry rotated_cube_27deg_128_stm.fds
-$QFDS -d Complex_Geometry rotated_cube_27deg_256_ibm.fds
 $QFDS -d Complex_Geometry rotated_cube_27deg_256_stm.fds
-$QFDS -o 2 -d Complex_Geometry rotated_cube_27deg_384_ibm.fds
 $QFDS -o 2 -d Complex_Geometry rotated_cube_27deg_384_stm.fds
-$QFDS -d Complex_Geometry rotated_cube_45deg_32_ibm.fds
 $QFDS -d Complex_Geometry rotated_cube_45deg_32_stm.fds
-$QFDS -d Complex_Geometry rotated_cube_45deg_64_ibm.fds
 $QFDS -d Complex_Geometry rotated_cube_45deg_64_stm.fds
-$QFDS -d Complex_Geometry rotated_cube_45deg_128_ibm.fds
 $QFDS -d Complex_Geometry rotated_cube_45deg_128_stm.fds
-$QFDS -d Complex_Geometry rotated_cube_45deg_256_ibm.fds
 $QFDS -d Complex_Geometry rotated_cube_45deg_256_stm.fds
-$QFDS -o 2 -d Complex_Geometry rotated_cube_45deg_384_ibm.fds
 $QFDS -o 2 -d Complex_Geometry rotated_cube_45deg_384_stm.fds
 
 $QFDS -d Complex_Geometry zero_thick_roof.fds
@@ -181,6 +155,8 @@ $QFDS -d Energy_Budget energy_budget_dns_100.fds
 $QFDS -d Energy_Budget energy_budget_particles.fds
 $QFDS -d Energy_Budget energy_budget_solid.fds
 $QFDS -d Energy_Budget energy_budget_tmix.fds
+$QFDS -d Energy_Budget test_hrr_2d_cyl.fds
+$QFDS -d Energy_Budget test_hrr_3d.fds
 
 $QFDS -d Extinction extinction_1.fds
 $QFDS -d Extinction extinction_2.fds
@@ -197,8 +173,7 @@ $QFDS -d Fires box_burn_away_2D.fds
 $QFDS -d Fires box_burn_away_2D_residue.fds
 $QFDS -d Fires box_burn_away1_pyro3d_vs_pyro1d.fds
 $QFDS -d Fires box_burn_away1_pyro3d_transport.fds
-$QFDS -d Fires couch.fds
-$QFDS -p 2 -d Fires couch2.fds
+$QFDS -p 4 -d Fires couch.fds
 $QFDS -d Fires fire_const_gamma.fds
 $QFDS -d Fires spray_burner.fds
 $QFDS -d Fires HoC_Ideal.fds
@@ -312,6 +287,8 @@ $QFDS -d HVAC ashrae7_quadratic.fds
 $QFDS -d HVAC ashrae7_table.fds
 $QFDS -d HVAC door_crack.fds
 $QFDS -d HVAC fan_test.fds
+$QFDS -d HVAC qfan_test.fds
+$QFDS -d HVAC qfan_multi.fds
 $QFDS -d HVAC HVAC_aircoil.fds
 $QFDS -d HVAC HVAC_damper.fds
 $QFDS -d HVAC HVAC_energy_pressure.fds
@@ -342,6 +319,7 @@ $QFDS -d HVAC leak_enthalpy.fds
 $QFDS -p 2 -d HVAC leak_test_3.fds
 $QFDS -d HVAC leak_test_4.fds
 $QFDS -d HVAC HVAC_leak_exponent.fds
+$QFDS -p 8 -d HVAC HVAC_leak_exponent_2.fds
 
 $QFDS -d Miscellaneous layer_1mesh.fds
 $QFDS -p 3 -d Miscellaneous layer_4mesh.fds
@@ -371,6 +349,7 @@ $QFDS -d NS_Analytical_Solution vort2d_40.fds
 $QFDS -d NS_Analytical_Solution vort2d_80.fds
 $QFDS -d NS_Analytical_Solution vort2d_160.fds
 $QFDS -d NS_Analytical_Solution vort2d_320.fds
+$QFDS -p 4 -d NS_Analytical_Solution ns2d_4mesh_64_uscarc.fds
 
 $QFDS -d Pressure_Effects isentropic.fds
 $QFDS -d Pressure_Effects isentropic2.fds
@@ -378,10 +357,15 @@ $QFDS -d Pressure_Effects pressure_boundary.fds
 $QFDS -d Pressure_Effects pressure_rise.fds
 $QFDS -d Pressure_Effects zone_break_fast.fds
 $QFDS -d Pressure_Effects zone_break_slow.fds
+$QFDS -d Pressure_Effects zone_break_fast_ulmat.fds
+$QFDS -d Pressure_Effects zone_break_slow_ulmat.fds
+$QFDS -d Pressure_Effects zone_break_slow_uscarc.fds
 $QFDS -p 2 -d Pressure_Effects zone_shape.fds
 $QFDS -p 8 -d Pressure_Effects zone_shape_2.fds
+$QFDS -d Pressure_Effects obst_coarse_fine_interface.fds
 
 $QFDS -d Pressure_Solver dancing_eddies_1mesh.fds
+$QFDS -d Pressure_Solver opening_ulmat.fds
 $QFDS -p 4 -d Pressure_Solver dancing_eddies_uglmat.fds
 $QFDS -p 4 -d Pressure_Solver dancing_eddies_tight.fds
 $QFDS -p 4 -d Pressure_Solver dancing_eddies_tight_no_precon.fds
@@ -406,9 +390,12 @@ $QFDS -p 8 -d Pressure_Solver pressure_iteration3d_scarc.fds
 $QFDS -p 8 -d Pressure_Solver pressure_iteration3d_uscarc.fds
 $QFDS -p 8 -d Pressure_Solver pressure_iteration3d_uglmat.fds
 $QFDS -p 2 -d Pressure_Solver ulmat_2zone.fds
+$QFDS -p 2 -d Pressure_Solver uscarc_inseparable_2zone.fds
 $QFDS -p 4 -d Pressure_Solver scarc_separable_4mesh.fds
 $QFDS -p 4 -d Pressure_Solver scarc_inseparable_4mesh.fds
+$QFDS -p 4 -d Pressure_Solver obst_activation_ulmat.fds
 $QFDS -p 4 -d Pressure_Solver obst_activation_uscarc_inseparable.fds
+$QFDS -p 4 -d Pressure_Solver obst_activation_2_uscarc_inseparable.fds
 
 $QFDS -d Pyrolysis cable_11_insulation_mcc.fds
 $QFDS -d Pyrolysis cable_23_insulation_mcc.fds
@@ -422,8 +409,12 @@ $QFDS -d Pyrolysis cone_demo_2.fds
 $QFDS -d Pyrolysis birch_tga_1step_2.fds
 $QFDS -d Pyrolysis birch_tga_1step_20.fds
 $QFDS -d Pyrolysis enthalpy.fds
+$QFDS -d Pyrolysis ice_cube.fds
 $QFDS -d Pyrolysis liquid_mixture.fds
 $QFDS -p 8 -d Pyrolysis methanol_evaporation.fds
+$QFDS -d Pyrolysis part_baking_soda_420K.fds
+$QFDS -d Pyrolysis part_baking_soda_450K.fds
+$QFDS -d Pyrolysis part_baking_soda_500K.fds
 $QFDS -d Pyrolysis pyrolysis_1.fds
 $QFDS -d Pyrolysis pyrolysis_2.fds
 $QFDS -d Pyrolysis specified_hrr.fds
@@ -461,16 +452,18 @@ $QFDS -d Pyrolysis surf_mass_two_species_spher.fds
 $QFDS -d Pyrolysis tga_analysis.fds
 $QFDS -d Pyrolysis tga_sample.fds
 $QFDS -d Pyrolysis two_step_solid_reaction.fds
-$QFDS -d Pyrolysis pcm_slab.fds
 $QFDS -d Pyrolysis pyro3d_wood_char.fds
 $QFDS -d Pyrolysis pyro3d_vs_pyro1d.fds
 $QFDS -d Pyrolysis pyro3d_vs_pyro1d_wood_moist.fds
 $QFDS -d Pyrolysis pyro3d_transport.fds
-$QFDS -d Pyrolysis solid_particle_decomposition_1.fds
-$QFDS -d Pyrolysis solid_particle_decomposition_2.fds
-$QFDS -d Pyrolysis solid_particle_decomposition_3.fds
-$QFDS -d Pyrolysis water_ice_water.fds
 $QFDS -d Pyrolysis water_pool.fds
+$QFDS -d Pyrolysis matl_e_cons_1.fds
+$QFDS -d Pyrolysis matl_e_cons_2.fds
+$QFDS -d Pyrolysis matl_e_cons_3.fds
+$QFDS -d Pyrolysis matl_e_cons_4.fds
+$QFDS -d Pyrolysis matl_e_cons_5.fds
+$QFDS -d Pyrolysis matl_e_cons_6.fds
+$QFDS -d Pyrolysis matl_e_cons_7.fds
 
 $QFDS -d Radiation adiabatic_surface_temperature.fds
 $QFDS -d Radiation droplet_absorption_cart.fds
@@ -543,11 +536,15 @@ $QFDS -d Radiation TC_heating.fds
 $QFDS -d Radiation TC_view_factor.fds
 $QFDS -d Radiation wall_internal_radiation.fds
 
+$QFDS -p 4 -d Restart device_restart_a.fds
+$QFDS -p 4 -d Restart device_restart_base_case.fds
 $QFDS -d Restart restart_test1a.fds
 $QFDS -d Restart pyro3d_restart_a.fds
 $QFDS -d Restart pyro3d_restart_base_case.fds
 $QFDS -d Restart geom_restart_a.fds
 $QFDS -d Restart geom_restart_base_case.fds
+$QFDS -d Restart clocks_restart_a.fds
+$QFDS -d Restart clocks_restart_base_case.fds
 
 $QFDS -d Species burke_schumann.fds
 $QFDS -d Species FED_FIC.fds
@@ -647,11 +644,9 @@ $QFDS -d Sprinklers_and_Sprays water_evaporation_3.fds
 $QFDS -d Sprinklers_and_Sprays water_evaporation_4.fds
 $QFDS -d Sprinklers_and_Sprays water_evaporation_4_np100.fds
 $QFDS -d Sprinklers_and_Sprays water_evaporation_5.fds
-$QFDS -d Sprinklers_and_Sprays Ranz_Marshall_thermally_thick.fds
 $QFDS -d Sprinklers_and_Sprays water_evaporation_6.fds
 $QFDS -d Sprinklers_and_Sprays water_evaporation_7.fds
 $QFDS -d Sprinklers_and_Sprays water_evaporation_8.fds
-$QFDS -d Sprinklers_and_Sprays Li_Chow_thermally_thick.fds
 $QFDS -d Sprinklers_and_Sprays water_fuel_sprays.fds
 $QFDS -d Sprinklers_and_Sprays screen_drag_1.fds
 $QFDS -d Sprinklers_and_Sprays screen_drag_2.fds
@@ -710,6 +705,7 @@ $QFDS -p 4 -d Scalar_Analytical_Solution shunn3_4mesh_64.fds
 $QFDS -p 4 -d Scalar_Analytical_Solution shunn3_4mesh_128.fds
 $QFDS -p 4 -d Scalar_Analytical_Solution shunn3_4mesh_256.fds
 $QFDS -p 4 -d Scalar_Analytical_Solution shunn3_4mesh_512.fds
+$QFDS -p 4 -d Scalar_Analytical_Solution shunn3_4mesh_64_uscarc.fds
 $QFDS      -d Scalar_Analytical_Solution soborot_godunov_square_wave_16.fds
 $QFDS      -d Scalar_Analytical_Solution soborot_godunov_square_wave_32.fds
 $QFDS      -d Scalar_Analytical_Solution soborot_godunov_square_wave_64.fds
@@ -739,6 +735,23 @@ $QFDS -p 4 -d Scalar_Analytical_Solution soborot_mp5_cos_wave_128.fds
 $QFDS -o 1 -d Thread_Check race_test_1.fds
 $QFDS -o 4 -d Thread_Check race_test_4.fds
 
+$QFDS -t -o 1 -A -d Timing_Benchmarks openmp_test64a.fds
+$QFDS -t -o 2 -A -d Timing_Benchmarks openmp_test64b.fds
+$QFDS -t -o 3 -A -d Timing_Benchmarks openmp_test64c.fds
+$QFDS -t -o 4 -A -d Timing_Benchmarks openmp_test64d.fds
+$QFDS -t -o 5 -A -d Timing_Benchmarks openmp_test64e.fds
+$QFDS -t -o 6 -A -d Timing_Benchmarks openmp_test64f.fds
+$QFDS -t -o 7 -A -d Timing_Benchmarks openmp_test64g.fds
+$QFDS -t -o 8 -A -d Timing_Benchmarks openmp_test64h.fds
+$QFDS -t -o 1 -A -d Timing_Benchmarks openmp_test128a.fds
+$QFDS -t -o 2 -A -d Timing_Benchmarks openmp_test128b.fds
+$QFDS -t -o 3 -A -d Timing_Benchmarks openmp_test128c.fds
+$QFDS -t -o 4 -A -d Timing_Benchmarks openmp_test128d.fds
+$QFDS -t -o 5 -A -d Timing_Benchmarks openmp_test128e.fds
+$QFDS -t -o 6 -A -d Timing_Benchmarks openmp_test128f.fds
+$QFDS -t -o 7 -A -d Timing_Benchmarks openmp_test128g.fds
+$QFDS -t -o 8 -A -d Timing_Benchmarks openmp_test128h.fds
+
 $QFDS -d Turbulence csmag0_32.fds
 $QFDS -d Turbulence csmag_32.fds
 $QFDS -d Turbulence csmag_64.fds
@@ -764,8 +777,9 @@ $QFDS -d Turbulence ramp_prof_u_z.fds
 $QFDS -d WUI Bova_1a.fds
 $QFDS -d WUI Bova_1b.fds
 $QFDS -d WUI Bova_4a.fds
+$QFDS -d WUI bulk_density_file.fds
 $QFDS -d WUI char_oxidation_1.fds
-$QFDS -d WUI char_oxidation_2.fds
+$QFDS -p 2 -d WUI char_oxidation_2.fds
 $QFDS -d WUI dragon_5a.fds
 $QFDS -p 2 -d WUI ground_vegetation_conv.fds
 $QFDS -p 2 -d WUI ground_vegetation_drag.fds
@@ -773,6 +787,12 @@ $QFDS -p 2 -d WUI ground_vegetation_load.fds
 $QFDS -p 2 -d WUI ground_vegetation_radi.fds
 $QFDS -d WUI hot_rods.fds
 $QFDS -d WUI level_set_fuel_model_1.fds
+$QFDS -d WUI LS_ellipse_0ms_00deg.fds
+$QFDS -d WUI LS_ellipse_5ms_00deg.fds
+$QFDS -d WUI LS_ellipse_0ms_30deg.fds
+$QFDS -d WUI LS_ellipse_5ms_30deg.fds
+$QFDS -d WUI Morvan_TGA.fds
+$QFDS -d WUI Morvan_TGA_2.fds
 $QFDS -d WUI Needle_TGA_A.fds
 $QFDS -d WUI Needle_TGA_B.fds
 $QFDS -d WUI Needle_TGA_C.fds
